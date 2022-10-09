@@ -1,12 +1,21 @@
 {
-  "name": "mfe-template",
+  "name": "mfe-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "app1",
+    "shell"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
+    "build:start": "lerna run --parallel build:start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  }
 }

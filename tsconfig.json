@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "app1/App": ["./app1/src/App"],
+      "app1/Bootstrap": ["./app1/src/bootstrap"]
+    }
+  },
+  "exclude": ["node_modules", "node_modules/*"]
+}
